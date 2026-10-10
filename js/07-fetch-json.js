@@ -12,36 +12,10 @@ const statusMessage = document.querySelector("#status");
 
 let allStudents = []; // används i uppgift 7
 
-// Färdigt från 06: bygger ett li för en student, och ritar om hela listan.
+// Kopiera in createStudentItem och renderStudents från din lösning på 06 här.
+// Det är dem du ritar upp listan med i uppgift 4.
 
-function createStudentItem(student) {
-  const li = document.createElement("li");
-  li.textContent = `${student.name} (${student.grade}), ${student.age} år`;
 
-  if (student.skills.length === 0) {
-    const empty = document.createElement("p");
-    empty.textContent = "Inga skills än";
-    li.append(empty);
-  } else {
-    const skillList = document.createElement("ul");
-    for (const skill of student.skills) {
-      const skillItem = document.createElement("li");
-      skillItem.textContent = skill;
-      skillList.append(skillItem);
-    }
-    li.append(skillList);
-  }
-
-  return li;
-}
-
-function renderStudents(studentsToShow) {
-  list.replaceChildren();
-  for (const student of studentsToShow) {
-    list.append(createStudentItem(student));
-  }
-  count.textContent = `Visar ${studentsToShow.length} studenter`;
-}
 
 // Uppgift 1: Skriv en async function logStudents() som hämtar DATA_URL med fetch.
 // Logga först svaret från fetch, sedan det du får av await response.json().
