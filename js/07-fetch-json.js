@@ -1,56 +1,12 @@
-// 07. Hämta data från en JSON-fil med fetch, async och await
-// Samma lista som i 06, men nu ligger datan i data/students.json i stället för i koden.
+// 07. Hämta en lista från en JSON-fil med fetch, async och await
+// Studenterna ligger nu i data/students.json i stället för i koden. Öppna filen och titta.
 // Byt script i index.html till den här filen och öppna sidan med Live Server.
-// Öppna data/students.json och titta: JSON liknar ett JavaScript-objekt,
-// men alla nycklar har dubbla citattecken och det får inte finnas kommatecken efter sista elementet.
-
-const DATA_URL = "./data/students.json";
+// fetch fungerar inte om du öppnar index.html direkt från filsystemet.
 
 const list = document.querySelector("#student-list");
-const count = document.querySelector("#count");
-const statusMessage = document.querySelector("#status");
 
-let allStudents = []; // används i uppgift 7
-
-// Kopiera in createStudentItem och renderStudents från din lösning på 06 här.
-// Det är dem du ritar upp listan med i uppgift 4.
-
-
-
-// Uppgift 1: Skriv en async function logStudents() som hämtar DATA_URL med fetch.
-// Logga först svaret från fetch, sedan det du får av await response.json().
-// Anropa funktionen. Vad är skillnaden mellan de två sakerna du loggade?
-
-
-
-// Uppgift 2: Ta bort await framför fetch och kör igen. Vad loggas nu, och vilket fel får du?
-
-
-
-// Uppgift 3: Skriv en async function getStudents() som returnerar datan i stället för att logga den.
-// Om response.ok är false ska den kasta ett fel med statuskoden:
-// throw new Error(`Kunde inte hämta studenterna (${response.status})`)
-
-
-
-// Uppgift 4: Skriv en async function showStudents() som
-// - skriver "Laddar…" i #status
-// - hämtar studenterna med getStudents() och renderar dem med renderStudents()
-// - tömmer #status när det gått bra
-// - skriver felmeddelandet i #status om något går fel. Använd try och catch.
+// Uppgift 1: Skriv en async function showStudents() som
+// - hämtar "./data/students.json" med await fetch(...)
+// - gör om svaret till en array med await response.json()
+// - lägger varje students namn som ett li i #student-list
 // Anropa showStudents().
-
-
-
-// Uppgift 5: Ändra DATA_URL till "./data/studenter.json", som inte finns, och ladda om.
-// Vad står på sidan och i konsolen? Ändra tillbaka efteråt.
-// Varför behövs kollen av response.ok? Hamnar inte en 404 i catch av sig själv?
-
-
-
-// Uppgift 6: Öppna index.html direkt från filsystemet, alltså utan Live Server. Vad händer?
-
-
-
-// Uppgift 7 (överkurs): Få knapparna "Alla" och "Bara A" att fungera med datan från JSON-filen.
-// Spara datan i variabeln allStudents i showStudents(), så att lyssnarna kommer åt den.

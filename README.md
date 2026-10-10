@@ -16,8 +16,8 @@
 | `04-loopa-objekt.js` | `for...in`, `Object.keys/values/entries` tillsammans med `for...of` |
 | `05-array-av-objekt.js` | Hitta, filtrera, plocka ut, summera och jämföra, i funktioner som returnerar |
 | `06-rendera-lista.js` | Från data till sidan: rendera en lista, nästlade listor, en funktion som ritar om, tomt läge |
-| `07-fetch-json.js` | Hämta data från en JSON-fil med `fetch`, `async` och `await`. Laddar, fel och `response.ok` |
-| `08-fetch-api.js` | Hämta användare från ett öppet API och rendera dem. Avslutas med att du utforskar The Trivia API på egen hand |
+| `07-fetch-json.js` | Hämta en lista från en JSON-fil med `fetch`, `async` och `await`, och rendera den |
+| `08-fetch-api.js` | Samma sak, fast från ett öppet API |
 
 Fastnar du: läs uppgiften igen och skriv ut det du har med `console.log` innan du skriver nästa rad. Oftast är det en nivå för mycket eller för lite.
 

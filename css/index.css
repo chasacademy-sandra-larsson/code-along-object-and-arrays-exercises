@@ -59,47 +59,16 @@ h2 {
   font-size: 1.4rem;
 }
 
-#reload-users {
-  padding: 0.6rem 1.6rem;
-  font: inherit;
-  cursor: pointer;
-}
-
-#reload-users:focus-visible {
-  outline: 0.3rem solid #1d4ed8;
-  outline-offset: 0.2rem;
-}
-
-#reload-users:disabled {
-  cursor: wait;
-  opacity: 0.6;
-}
-
-#status,
-#api-status,
-#quiz-status {
-  margin: 1.2rem 0;
-}
-
-#user-list > li,
-#question-list > li {
+#user-list > li {
   padding: 1.6rem;
   margin-bottom: 1.2rem;
   background: #f4f4f5;
   list-style: none;
 }
 
-#question-list h3 {
-  font-size: 1.8rem;
-}
-
-#user-list p,
-#question-list p {
+#user-list p {
   font-size: 1.4rem;
   color: #52525b;
   margin-bottom: 0.8rem;
 }
 
-#question-list ol {
-  margin-left: 2.4rem;
-}
