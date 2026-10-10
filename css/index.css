@@ -24,3 +24,82 @@ h1 {
   font-size: 2.8rem;
   margin-bottom: 0.8rem;
 }
+
+h2 {
+  font-size: 2.2rem;
+  margin: 3.2rem 0 1.2rem;
+}
+
+.filters {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.filters button {
+  padding: 0.6rem 1.6rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.filters button:focus-visible {
+  outline: 0.3rem solid #1d4ed8;
+  outline-offset: 0.2rem;
+}
+
+#student-list > li {
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 0.8rem;
+  background: #f4f4f5;
+  list-style: none;
+}
+
+#student-list ul {
+  margin: 0.4rem 0 0 2rem;
+  font-size: 1.4rem;
+}
+
+#reload-users {
+  padding: 0.6rem 1.6rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+#reload-users:focus-visible {
+  outline: 0.3rem solid #1d4ed8;
+  outline-offset: 0.2rem;
+}
+
+#reload-users:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+#status,
+#api-status,
+#quiz-status {
+  margin: 1.2rem 0;
+}
+
+#user-list > li,
+#question-list > li {
+  padding: 1.6rem;
+  margin-bottom: 1.2rem;
+  background: #f4f4f5;
+  list-style: none;
+}
+
+#question-list h3 {
+  font-size: 1.8rem;
+}
+
+#user-list p,
+#question-list p {
+  font-size: 1.4rem;
+  color: #52525b;
+  margin-bottom: 0.8rem;
+}
+
+#question-list ol {
+  margin-left: 2.4rem;
+}
