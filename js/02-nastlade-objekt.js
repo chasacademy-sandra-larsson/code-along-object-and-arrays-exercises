@@ -28,25 +28,29 @@ const otherUser = {
 
 // Uppgift 1: Skriv ut user:s stad och latitud.
 
-
+console.log(user.address.city);
+console.log(user.address.geo.lat);
 
 // Uppgift 2: Ändra user:s tema till "light" och slå på sms-notiser.
-
+user.settings.theme = "light";
+user.settings.notifications.sms = true;
+console.log(user.settings);
 
 
 // Uppgift 3: Försök skriva ut otherUser.address.city. Vad händer, och varför?
-
+//console.log(otherUser.adress.city);  // Kastar (ger) ett fel - optional chaining
 
 
 // Uppgift 4: Gör samma sak med optional chaining (?.) så att det inte kraschar.
-
+console.log(otherUser.adress?.city);
 
 
 // Uppgift 5: Skriv en funktion getCity(person) som returnerar staden,
 // eller "Okänd stad" om adressen saknas. Använd ?. och ??.
 // Testa med både user och otherUser.
 
-
+// hoppas över just nu
 
 // Uppgift 6: user.contact.phone är null. Skriv ut telefonnumret,
 // eller "Inget nummer" om det saknas.
+console.log(otherUser.contact.phone ?? "inget nummer");
