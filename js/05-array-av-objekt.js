@@ -11,11 +11,24 @@ const students = [
 ];
 
 // Uppgift 1: Skriv ut "Bob (B)", "Sara (A)" och så vidare med for...of.
-
+for(const student of students) {
+    console.log(`${student.name} (${student.grade})`);
+}
 
 
 // Uppgift 2: Skriv en funktion findStudentById(id) som returnerar studenten med det id:t,
 // eller null om ingen finns. Avbryt loopen så fort du hittat rätt.
+function findStudentById(id) {
+  for(const student of students) {
+    if(student.id === id ) {
+      return student;
+    }
+  }
+  return null;
+}
+
+console.log(findStudentById(3));
+console.log(findStudentById(100));
 
 
 

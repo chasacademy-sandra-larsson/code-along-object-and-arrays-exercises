@@ -62,4 +62,4 @@ console.log("De frukter som är slut är", soldOut);
 
 
 // Uppgift 7: Hur många nycklar har movie? Objekt har ingen .length.
-console.log(Object.keys(movie.length);
+console.log(Object.keys(movie.length));
