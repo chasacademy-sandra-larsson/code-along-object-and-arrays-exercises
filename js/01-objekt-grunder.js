@@ -9,30 +9,36 @@ const book = {
 };
 
 // Uppgift 1: Skriv ut bokens titel och författare med punktnotation.
-
+console.log(book.title, book.author);
 
 
 // Uppgift 2: Skriv ut året med bracket-notation, alltså book["..."].
-
+console.log(book["year"]);
 
 
 // Uppgift 3: Spara strängen "author" i en variabel som heter field.
 // Skriv ut värdet med hjälp av variabeln. Varför fungerar inte book.field?
-
+const field = "author";
+console.log(book[field]);
 
 
 // Uppgift 4: Ändra isAvailable till false, och lägg till en ny nyckel pages med värdet 160.
 // Skriv ut hela objektet. Hur kan du ändra ett objekt som är deklarerat med const?
-
+book.isAvailable = false;
+book.pages = 160;
+console.log(book);
 
 
 // Uppgift 5: Skriv ut book.publisher. Vad får du, och varför blir det inget fel?
-
+console.log(book.publisher);
 
 
 // Uppgift 6: Kontrollera om boken har nyckeln "pages" respektive "publisher".
 // Använd Object.hasOwn(objekt, nyckel).
-
+console.log(Object.hasOwn(book, "pages"));
+console.log(Object.hasOwn(book, "publisher"));
 
 
 // Uppgift 7: Ta bort nyckeln isAvailable med delete och skriv ut objektet igen.
+delete book.isAvailable;
+console.log(book);
