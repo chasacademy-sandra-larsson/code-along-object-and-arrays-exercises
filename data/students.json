@@ -6,3 +6,4 @@
   { "id": 5, "name": "Nils", "grade": "A", "age": 23, "skills": ["CSS", "Figma"] },
   { "id": 6, "name": "Amira", "grade": "B", "age": 27, "skills": ["Figma", "JavaScript"] }
 ]
+

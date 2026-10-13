@@ -1,0 +1,65 @@
+{
+  "personuppgifter": {
+    "namn": "Elin Bergqvist",
+    "fodelsear": 1993,
+    "ort": "Göteborg",
+    "email": "elin.bergqvist@exempel.se",
+    "telefon": "070-123 45 67",
+    "profil": "Driven systemutvecklare med passion för användarvänliga webbapplikationer och hållbar kod."
+  },
+  "arbetslivserfarenhet": [
+    {
+      "foretag": "Nordvik Digital AB",
+      "titel": "Senior frontendutvecklare",
+      "ort": "Göteborg",
+      "start": "2021-03",
+      "slut": null,
+      "beskrivning": "Leder frontendteamet i utvecklingen av en e-handelsplattform byggd i React och TypeScript."
+    },
+    {
+      "foretag": "Kustlinjen IT Konsult",
+      "titel": "Webbutvecklare",
+      "ort": "Halmstad",
+      "start": "2018-08",
+      "slut": "2021-02",
+      "beskrivning": "Utvecklade skräddarsydda webblösningar för kommuner och mindre företag."
+    },
+    {
+      "foretag": "Café Solrosen",
+      "titel": "Barista",
+      "ort": "Lund",
+      "start": "2014-06",
+      "slut": "2018-06",
+      "beskrivning": "Deltidsarbete under studietiden med kundservice och kassaansvar."
+    }
+  ],
+  "utbildning": [
+    {
+      "skola": "Lunds universitet",
+      "program": "Kandidatprogram i datavetenskap",
+      "examen": "Filosofie kandidatexamen",
+      "start": "2015-08",
+      "slut": "2018-06"
+    },
+    {
+      "skola": "Polhemskolan",
+      "program": "Teknikprogrammet",
+      "examen": "Gymnasieexamen",
+      "start": "2009-08",
+      "slut": "2012-06"
+    }
+  ],
+  "kompetenser": ["JavaScript", "TypeScript", "React", "Node.js", "SQL", "Git", "Figma"],
+  "sprak": [
+    { "sprak": "Svenska", "niva": "Modersmål" },
+    { "sprak": "Engelska", "niva": "Flytande" },
+    { "sprak": "Spanska", "niva": "Grundläggande" }
+  ],
+  "hobbys": [
+    "Klättring",
+    "Fotografering",
+    "Brädspel",
+    "Surdegsbakning",
+    "Långdistanslöpning"
+  ]
+}

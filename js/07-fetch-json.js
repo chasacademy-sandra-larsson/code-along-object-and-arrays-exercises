@@ -10,3 +10,26 @@ const list = document.querySelector("#student-list");
 // - gör om svaret till en array med await response.json()
 // - lägger varje students namn som ett li i #student-list
 // Anropa showStudents().
+
+
+async function showStudents() {
+
+    const response = await fetch("./data/students.json"); // GET HTTP-REQUEST
+    const students = await response.json();
+
+    renderStudents(students);
+}
+
+function renderStudents(students) {
+
+    for(const student of students) {
+        const li = document.createElement("li");
+        li.textContent = student.name;
+        list.append(li);
+
+    }
+
+
+}
+
+showStudents();

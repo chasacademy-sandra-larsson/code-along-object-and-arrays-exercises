@@ -10,3 +10,27 @@ const userList = document.querySelector("#user-list");
 // med namn och stad: "Leanne Graham, Gwenborough".
 // Det är samma sak som i 07, bara en annan adress.
 // Tips: staden ligger i ett nästlat objekt. Logga en användare om du inte hittar den.
+
+async function showUsers() {
+
+    
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const users = await response.json();
+
+    renderUsers(users);
+}
+
+
+
+function renderUsers(users) {
+
+    for(const user of users) {
+        const li = document.createElement("li");
+        li.textContent = `${user.name} ${user.address.city}`;
+        userList.append(li);
+
+      }
+
+}
+
+showUsers();
